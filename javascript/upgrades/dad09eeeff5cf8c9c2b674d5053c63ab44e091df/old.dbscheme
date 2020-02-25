@@ -385,8 +385,6 @@ case @expr.kind of
 
 @exportspecifier = @namedexportspecifier | @exportdefaultspecifier | @exportnamespacespecifier;
 
-@import_or_export_declaration = @importdeclaration | @exportdeclaration;
-
 @typeassertion = @astypeassertion | @prefixtypeassertion;
 
 @classdefinition = @classdeclstmt | @classexpr;
@@ -520,7 +518,6 @@ hasPublicKeyword (int id: @property ref);
 hasPrivateKeyword (int id: @property ref);
 hasProtectedKeyword (int id: @property ref);
 hasReadonlyKeyword (int id: @property ref);
-hasTypeKeyword (int id: @import_or_export_declaration ref);
 isOptionalMember (int id: @property ref);
 hasDefiniteAssignmentAssertion (int id: @field_or_vardeclarator ref);
 isOptionalParameterDeclaration (unique int parameter: @pattern ref);
