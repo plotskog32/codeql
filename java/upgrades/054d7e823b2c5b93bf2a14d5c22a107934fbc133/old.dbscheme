@@ -268,10 +268,6 @@ classes(
   int sourceid: @class ref
 );
 
-isRecord(
-  unique int id: @class ref
-);
-
 interfaces(
   unique int id: @interface,
   string nodeName: string ref,
